@@ -1,0 +1,12 @@
+Main_Path   'C:\Users\control\Desktop\NFT_Task_Control_and_EEG_Record_System'
+Data_Folder 'Data\TaskData'
+Task_Folder 'TaskSources'
+Task_List   {'CTT','Nback','PL'}
+Task_Run_File {'run_CTT','run_Nback','run_PL'}
+Voice_Path     'Sources\Voice'
+Library_Path 'Sources\Library'
+IP           '192.168.0.100'
+EEGRecord_Path 'EEGRecordProgram'
+Record_mdl 'ssvep_15_electrodes.mdl'
+Baseline_Path 'C:\Users\control\Documents\MATLAB\Neurofeedback_for_MI'
+Baseline_mdl 'gUSB_alpha_training_20150326_testing.mdl'

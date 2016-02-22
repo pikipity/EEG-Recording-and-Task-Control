@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- configuration file -->
+<root>
+    <trialDuration           value="51.4286" />     <!-- double, in seconds -->
+    <blankBeforeTrail        value="1.0" />     <!-- double, in seconds, draw straigt line before real trails -->
+    <trialsPerBlock          value="4" />       <!-- int -->
+    <blocksInTrainPhase      value="4" />       <!-- int -->
+    <blocksInTestPhase       value="0" />       <!-- int -->
+    <sampleRate              value="50" />      <!-- double -->
+	<showTrajactory          value="false" />    <!-- true: show trajactory in tails, false: hide trajacotry -->
+	<showScore               value="true" />   <!-- true: show score, false: hide score -->
+	<fixedSegParameters      value="-2.44,3.24,-2.40,-2.90,-4.28,-3.95,4.89,1.57,2.23,-3.26,2.51,-2.85,-1.33" /> <!-- a1-a6,b0-b6 -->
+	<segShifts               value="-0.15,-0.15,-0.15" /> <!-- shift of each segment [0,1] -->
+	<segFixed                value="2" />       <!-- 1:fix the 1st,2:fix the 2nd,3:fix the 3rd,
+   													 other values:nofix (and the fixedSegParameters will be ignored too) -->
+    <flexSegDifficultyRange  value="0.01"/>     <!-- +-1% -->
+	<flexSegDifficulties     value="173.34,173.34,173.34" /> <!-- diffs of the segment1,2,3, correspondingly.
+   													 if it is fixed, fixedSegParameters will be used instead -->
+    <difficultySampleGap     value="0.15"/>     <!-- the gap width used when sampling the difficulty on each segment. 0%-50% -->
+    <periodOfSegment         value="2.1429"/>      <!-- [0 , 1.5PI] -->
+	<pointSize               value="9"/>        <!-- int -->
+    <pointColor              value="255,0,0"/>  <!-- R,G,B color -->
+</root>
+<!--
+to be set in GUI:
+    subjectNo.        
+    trailDuration     
+    blankBeforeTrail  
+    trailsPerBlock    
+    blocksInTrainPhase
+    blocksInTestPhase 
+    sampleRate        
+    showTrajactory    
+
+logFile naming convention
+
+    SubjNo_Bn_Tn.log
+    t    x    y     M_x  M_y    Distance
+
+    SubjNo_Bn_Tn.param
+    a1  a2 ... a6 b0 ... b6 diff
+
+    SubjNo.score
+    TotalTrail Sc_all Sc_seg1 Sc_seg2 Sc_seg3
+
+-->

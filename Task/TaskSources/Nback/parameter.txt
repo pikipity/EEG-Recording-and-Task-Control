@@ -1,0 +1,9 @@
+displaymode 1                  %0: window; 1: full screen
+resolution 1                   %1=640x480, 2=800x600, 3=1024x768, 4=1152x864, 5=1280x1024, 6=1600x1200
+trials 20                      %In one trial, how many fonts will be displayed 
+hitnum 5                       %At least, how many hits are required
+letters {'q','w','y','z','m'}  %Letters will be displayed.
+ITI 1500                       %"+" display time (ms)
+stim_dur 500                   %characters display time (ms)
+resp_button [6,8,52]              %fail/hit/quit buttons. Use "help readkeys" to get all button map
+min_back 2                   %back number. Maximum is 3.

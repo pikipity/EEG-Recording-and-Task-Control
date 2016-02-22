@@ -1,0 +1,9 @@
+displaymode 1                  %0: window; 1: full screen
+resolution 1                   %1=640x480, 2=800x600, 3=1024x768, 4=1152x864, 5=1280x1024, 6=1600x1200
+trials 150                      %In one trial, how many fonts will be displayed 
+num_q 150/2                       %number of q
+letters {'q','p'}  %Letters will be displayed.
+ITI [1000,1760]                %"+" display time (ms)
+ITI_qp 500                     %"qp" display time (ms)
+stim_dur 69                   %characters display time (ms)
+resp_button [97,98,52]           %<-/->/quit buttons. Use "help readkeys" to get all button map
